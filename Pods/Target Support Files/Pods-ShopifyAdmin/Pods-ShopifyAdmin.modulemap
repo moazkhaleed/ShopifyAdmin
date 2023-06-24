@@ -1,0 +1,6 @@
+framework module Pods_ShopifyAdmin {
+  umbrella header "Pods-ShopifyAdmin-umbrella.h"
+
+  export *
+  module * { export * }
+}

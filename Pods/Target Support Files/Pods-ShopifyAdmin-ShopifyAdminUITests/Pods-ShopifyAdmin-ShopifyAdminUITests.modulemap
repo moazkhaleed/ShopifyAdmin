@@ -1,0 +1,6 @@
+framework module Pods_ShopifyAdmin_ShopifyAdminUITests {
+  umbrella header "Pods-ShopifyAdmin-ShopifyAdminUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

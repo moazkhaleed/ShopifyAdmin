@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  ShopifyAdmin
 //
-//  Created by Moaz Khaled on 24/06/2023.
+//  Created by Moaz Khaled on 06/06/2023.
 //
 
 import UIKit
@@ -49,7 +49,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
+    
+    func changeRootViewController(_ vc: UIViewController, animated: Bool = true) {
+        guard let window = self.window else {
+            return
+        }
 
+        window.rootViewController = vc
 
+        // add animation
+        UIView.transition(with: window,
+                          duration: 0.5,
+                          options: [.transitionFlipFromLeft],
+                          animations: nil,
+                          completion: nil)
+    }
 }
 
