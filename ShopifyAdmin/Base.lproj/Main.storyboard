@@ -15,7 +15,7 @@
         <!--Product View Controller-->
         <scene sceneID="vSK-It-7W6">
             <objects>
-                <viewController storyboardIdentifier="ProductViewController" hidesBottomBarWhenPushed="YES" id="Q72-A1-Ixv" customClass="ProductViewController" customModule="Shopify_Admin_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductViewController" hidesBottomBarWhenPushed="YES" id="Q72-A1-Ixv" customClass="ProductViewController" customModule="ShopifyAdmin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CdW-U8-cdI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,7 +244,7 @@
         <!--Product ImagesVC-->
         <scene sceneID="eWI-xo-qmX">
             <objects>
-                <viewController storyboardIdentifier="ProductImagesVC" id="oFP-sS-Sxl" customClass="ProductImagesVC" customModule="Shopify_Admin_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductImagesVC" id="oFP-sS-Sxl" customClass="ProductImagesVC" customModule="ShopifyAdmin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gyn-aR-YYz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -321,7 +321,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productImageCell" id="i63-jf-vty" customClass="ProductImageCell" customModule="Shopify_Admin_App" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productImageCell" id="i63-jf-vty" customClass="ProductImageCell" customModule="ShopifyAdmin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="46" width="287" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="axw-1O-NNg">
@@ -380,6 +380,9 @@
                                 <color key="pageIndicatorTintColor" systemColor="systemGray5Color"/>
                                 <color key="currentPageIndicatorTintColor" name="AccentColor"/>
                             </pageControl>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image_not_available" translatesAutoresizingMaskIntoConstraints="NO" id="2Py-Sj-Wel">
+                                <rect key="frame" x="16" y="59" width="361" height="216"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="p4j-A2-g7e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -387,6 +390,7 @@
                             <constraint firstItem="9ek-gA-UJN" firstAttribute="bottom" secondItem="sp2-PN-Wg3" secondAttribute="bottom" constant="-16" id="0J6-Fa-b3x"/>
                             <constraint firstItem="L7V-tB-LMb" firstAttribute="top" secondItem="yxR-4a-r5Z" secondAttribute="bottom" constant="39.666666666666742" id="1rO-QZ-iAc"/>
                             <constraint firstItem="ECX-QP-9jE" firstAttribute="centerX" secondItem="gyn-aR-YYz" secondAttribute="centerX" id="2v8-It-QXd"/>
+                            <constraint firstItem="yxR-4a-r5Z" firstAttribute="top" secondItem="2Py-Sj-Wel" secondAttribute="bottom" constant="16" id="9pL-KR-Dc4"/>
                             <constraint firstItem="p4j-A2-g7e" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="L7V-tB-LMb" secondAttribute="trailing" symbolic="YES" id="EvC-Y4-7gb"/>
                             <constraint firstItem="9ek-gA-UJN" firstAttribute="centerX" secondItem="sp2-PN-Wg3" secondAttribute="centerX" id="J22-bX-Eiy"/>
                             <constraint firstItem="p4j-A2-g7e" firstAttribute="trailing" secondItem="utK-Fo-cCb" secondAttribute="trailing" constant="106.33333333333331" id="Jeg-P9-haF"/>
@@ -398,6 +402,10 @@
                             <constraint firstItem="ECX-QP-9jE" firstAttribute="top" secondItem="QRJ-3W-KUP" secondAttribute="bottom" constant="42" id="Z29-Y9-vyJ"/>
                             <constraint firstItem="yxR-4a-r5Z" firstAttribute="centerX" secondItem="gyn-aR-YYz" secondAttribute="centerX" id="e2f-wL-xZP"/>
                             <constraint firstItem="QRJ-3W-KUP" firstAttribute="top" secondItem="L7V-tB-LMb" secondAttribute="bottom" constant="20" id="fEj-zx-wIo"/>
+                            <constraint firstItem="p4j-A2-g7e" firstAttribute="trailing" secondItem="2Py-Sj-Wel" secondAttribute="trailing" constant="16" id="h2a-D2-Jez"/>
+                            <constraint firstItem="2Py-Sj-Wel" firstAttribute="top" secondItem="p4j-A2-g7e" secondAttribute="top" id="hHB-60-Oso"/>
+                            <constraint firstItem="2Py-Sj-Wel" firstAttribute="leading" secondItem="p4j-A2-g7e" secondAttribute="leading" constant="16" id="kV7-Ma-e5n"/>
+                            <constraint firstItem="2Py-Sj-Wel" firstAttribute="centerX" secondItem="gyn-aR-YYz" secondAttribute="centerX" id="nTv-CQ-MFf"/>
                             <constraint firstItem="sp2-PN-Wg3" firstAttribute="top" secondItem="p4j-A2-g7e" secondAttribute="top" constant="16" id="raW-eP-6Gx"/>
                             <constraint firstItem="sp2-PN-Wg3" firstAttribute="trailing" secondItem="p4j-A2-g7e" secondAttribute="trailing" id="vjw-a0-7C9"/>
                             <constraint firstItem="L7V-tB-LMb" firstAttribute="leading" secondItem="p4j-A2-g7e" secondAttribute="leading" constant="16" id="w4E-fi-oMF"/>
@@ -409,6 +417,7 @@
                         <outlet property="collectionView" destination="sp2-PN-Wg3" id="RZt-Xj-cCz"/>
                         <outlet property="deleteImageBtn" destination="IJ3-56-P11" id="Pcv-xy-YaH"/>
                         <outlet property="imageNavigationStack" destination="yxR-4a-r5Z" id="m3N-dR-3aB"/>
+                        <outlet property="noImage" destination="2Py-Sj-Wel" id="hbM-dd-Pxl"/>
                         <outlet property="pageControl" destination="9ek-gA-UJN" id="ts2-5z-R8r"/>
                     </connections>
                 </viewController>
@@ -419,7 +428,7 @@
         <!--Product VariantsVC-->
         <scene sceneID="vuW-ot-vEE">
             <objects>
-                <viewController storyboardIdentifier="ProductVariantsVC" id="U5K-IZ-fkV" customClass="ProductVariantsVC" customModule="Shopify_Admin_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductVariantsVC" id="U5K-IZ-fkV" customClass="ProductVariantsVC" customModule="ShopifyAdmin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UAS-oy-G4b">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -500,7 +509,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productVariantCell" id="oGw-Mh-5jD" customClass="ProductVariantCell" customModule="Shopify_Admin_App" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productVariantCell" id="oGw-Mh-5jD" customClass="ProductVariantCell" customModule="ShopifyAdmin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="36.666666666666664" width="343" height="127"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SBV-Xh-F1L">
@@ -679,6 +688,12 @@
                                     </switch>
                                 </subviews>
                             </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Variant Available" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0t-PN-4Jo">
+                                <rect key="frame" x="16" y="149" width="361" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F80-VJ-Orh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -692,6 +707,7 @@
                             <constraint firstItem="ul9-Fy-1Gw" firstAttribute="leading" secondItem="UAS-oy-G4b" secondAttribute="leading" constant="24" id="Dda-qQ-dc5"/>
                             <constraint firstItem="YgO-d7-xbf" firstAttribute="trailing" secondItem="F80-VJ-Orh" secondAttribute="trailing" id="Fjs-b0-HBt"/>
                             <constraint firstAttribute="trailing" secondItem="mq8-2M-rqD" secondAttribute="trailing" constant="16" id="GOx-tT-cTX"/>
+                            <constraint firstItem="y0t-PN-4Jo" firstAttribute="leading" secondItem="F80-VJ-Orh" secondAttribute="leading" constant="16" id="HwP-2p-85N"/>
                             <constraint firstItem="mq8-2M-rqD" firstAttribute="top" secondItem="hog-JL-UKI" secondAttribute="bottom" constant="8" id="LSd-lq-4Ih"/>
                             <constraint firstItem="YgO-d7-xbf" firstAttribute="top" secondItem="F80-VJ-Orh" secondAttribute="top" id="NdV-Qx-xyw"/>
                             <constraint firstItem="YgO-d7-xbf" firstAttribute="leading" secondItem="F80-VJ-Orh" secondAttribute="leading" id="QTI-AB-DAk"/>
@@ -714,11 +730,14 @@
                             <constraint firstItem="ZNU-GC-9v4" firstAttribute="top" secondItem="mq8-2M-rqD" secondAttribute="bottom" constant="8" id="nCx-mc-s2e"/>
                             <constraint firstItem="gZE-Uj-pbm" firstAttribute="top" secondItem="ul9-Fy-1Gw" secondAttribute="bottom" constant="8" id="ncX-3E-LEa"/>
                             <constraint firstItem="meQ-aW-CVQ" firstAttribute="top" secondItem="ZNU-GC-9v4" secondAttribute="bottom" constant="8" id="oZS-c0-g1G"/>
+                            <constraint firstItem="F80-VJ-Orh" firstAttribute="trailing" secondItem="y0t-PN-4Jo" secondAttribute="trailing" constant="16" id="oog-ce-jN7"/>
                             <constraint firstItem="drh-IP-46e" firstAttribute="top" secondItem="gZE-Uj-pbm" secondAttribute="bottom" constant="8" id="qwu-iC-V39"/>
                             <constraint firstItem="c01-ag-xkV" firstAttribute="centerX" secondItem="UAS-oy-G4b" secondAttribute="centerX" id="s6G-27-ret"/>
+                            <constraint firstItem="y0t-PN-4Jo" firstAttribute="top" secondItem="F80-VJ-Orh" secondAttribute="top" constant="90" id="tKN-Al-bkf"/>
                             <constraint firstItem="meQ-aW-CVQ" firstAttribute="leading" secondItem="UAS-oy-G4b" secondAttribute="leading" constant="16" id="uvN-SV-Vmu"/>
                             <constraint firstItem="hog-JL-UKI" firstAttribute="leading" secondItem="UAS-oy-G4b" secondAttribute="leading" constant="24" id="vsS-FP-F9V"/>
                             <constraint firstItem="nEB-GD-L3o" firstAttribute="top" secondItem="c01-ag-xkV" secondAttribute="bottom" constant="8" id="xff-oj-uwR"/>
+                            <constraint firstItem="y0t-PN-4Jo" firstAttribute="centerX" secondItem="UAS-oy-G4b" secondAttribute="centerX" id="zLt-SM-xgw"/>
                             <constraint firstItem="fgB-A3-Eax" firstAttribute="top" secondItem="nEB-GD-L3o" secondAttribute="bottom" constant="16" id="zVr-I5-suy"/>
                         </constraints>
                     </view>
@@ -726,6 +745,7 @@
                         <outlet property="collectionView" destination="YgO-d7-xbf" id="iSR-4t-QR0"/>
                         <outlet property="colorTextField" destination="ZNU-GC-9v4" id="nKv-Ah-qse"/>
                         <outlet property="deleteVariantBtn" destination="tG8-Bz-b9t" id="XJw-6I-fO2"/>
+                        <outlet property="noVariantLabel" destination="y0t-PN-4Jo" id="Xom-wf-Q7E"/>
                         <outlet property="pageControl" destination="Y5b-kw-Szu" id="zRB-Yg-LaD"/>
                         <outlet property="priceTextField" destination="ul9-Fy-1Gw" id="WNp-hy-qXN"/>
                         <outlet property="quantityTextField" destination="drh-IP-46e" id="X5k-f9-3xK"/>
@@ -759,7 +779,7 @@
         <!--Products-->
         <scene sceneID="GDM-N7-wNG">
             <objects>
-                <viewController storyboardIdentifier="DisplayProductsVC" id="9fP-Xn-BEq" customClass="ProductsVC" customModule="Shopify_Admin_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DisplayProductsVC" id="9fP-Xn-BEq" customClass="ProductsVC" customModule="ShopifyAdmin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fmH-Lg-OxZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -774,7 +794,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productItem" id="GMI-Px-Pl1" customClass="ProductCell" customModule="Shopify_Admin_App" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productItem" id="GMI-Px-Pl1" customClass="ProductCell" customModule="ShopifyAdmin" customModuleProvider="target">
                                         <rect key="frame" x="94" y="0.0" width="189" height="244"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Kk3-zK-e2K">
@@ -929,7 +949,7 @@
         <!--Price Rule-->
         <scene sceneID="Guy-6c-XK1">
             <objects>
-                <viewController storyboardIdentifier="priceRuleVC" title="Price Rule" id="w9Z-2p-qPc" customClass="PriceRuleVC" customModule="Shopify_Admin_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="priceRuleVC" title="Price Rule" id="w9Z-2p-qPc" customClass="PriceRuleVC" customModule="ShopifyAdmin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cpQ-42-IJs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1085,7 +1105,7 @@
         <!--Price Rules-->
         <scene sceneID="KUc-Tt-sax">
             <objects>
-                <viewController id="eka-ti-Gih" customClass="PriceRulesVC" customModule="Shopify_Admin_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eka-ti-Gih" customClass="PriceRulesVC" customModule="ShopifyAdmin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CfR-c7-VXg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1149,7 +1169,7 @@
         <!--Discounts View Controller-->
         <scene sceneID="dF5-OD-6bY">
             <objects>
-                <viewController storyboardIdentifier="discountPage" id="sq0-f8-o1H" customClass="DiscountsViewController" customModule="Shopify_Admin_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="discountPage" id="sq0-f8-o1H" customClass="DiscountsViewController" customModule="ShopifyAdmin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HqH-IZ-Y5G">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1302,7 +1322,7 @@
         <!--Login View Controller-->
         <scene sceneID="Whl-M1-2e8">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="Hm0-bh-2dj" customClass="LoginViewController" customModule="Shopify_Admin_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Hm0-bh-2dj" customClass="LoginViewController" customModule="ShopifyAdmin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jbG-NK-ali">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1388,6 +1408,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image_not_available" width="900" height="540"/>
         <image name="arrow.down" catalog="system" width="118" height="128"/>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
@@ -1402,7 +1423,7 @@
         <image name="trash" catalog="system" width="117" height="128"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
-            <color red="0.33725490196078434" green="0.64313725490196072" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.33700001239776611" green="0.64300000667572021" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -49,7 +49,6 @@
 		1FFC70922A46DE48002C3E67 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC70672A46DE48002C3E67 /* ProductViewController.swift */; };
 		1FFC70932A46DE48002C3E67 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC70682A46DE48002C3E67 /* ProductsVC.swift */; };
 		1FFC70942A46DE48002C3E67 /* ProductImagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC70692A46DE48002C3E67 /* ProductImagesVC.swift */; };
-		1FFC70952A46DE48002C3E67 /* EditVariantsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC706A2A46DE48002C3E67 /* EditVariantsVC.swift */; };
 		1FFC70962A46DE48002C3E67 /* CollectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC706C2A46DE48002C3E67 /* CollectionsViewModel.swift */; };
 		1FFC70972A46DE48002C3E67 /* ProductsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC706D2A46DE48002C3E67 /* ProductsVM.swift */; };
 		1FFC70982A46DE48002C3E67 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC706E2A46DE48002C3E67 /* ProductViewModel.swift */; };
@@ -127,7 +126,6 @@
 		1FFC70672A46DE48002C3E67 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		1FFC70682A46DE48002C3E67 /* ProductsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 		1FFC70692A46DE48002C3E67 /* ProductImagesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductImagesVC.swift; sourceTree = "<group>"; };
-		1FFC706A2A46DE48002C3E67 /* EditVariantsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditVariantsVC.swift; sourceTree = "<group>"; };
 		1FFC706C2A46DE48002C3E67 /* CollectionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionsViewModel.swift; sourceTree = "<group>"; };
 		1FFC706D2A46DE48002C3E67 /* ProductsVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsVM.swift; sourceTree = "<group>"; };
 		1FFC706E2A46DE48002C3E67 /* ProductViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
@@ -390,7 +388,6 @@
 				1FFC70672A46DE48002C3E67 /* ProductViewController.swift */,
 				1FFC70682A46DE48002C3E67 /* ProductsVC.swift */,
 				1FFC70692A46DE48002C3E67 /* ProductImagesVC.swift */,
-				1FFC706A2A46DE48002C3E67 /* EditVariantsVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -741,7 +738,6 @@
 				1FFC70792A46DE48002C3E67 /* Constants.swift in Sources */,
 				1FFC707C2A46DE48002C3E67 /* Utils.swift in Sources */,
 				1FFC707F2A46DE48002C3E67 /* PriceRuleTableViewCell.swift in Sources */,
-				1FFC70952A46DE48002C3E67 /* EditVariantsVC.swift in Sources */,
 				1FFC70972A46DE48002C3E67 /* ProductsVM.swift in Sources */,
 				1FFC70892A46DE48002C3E67 /* CustomCollectionModel.swift in Sources */,
 				1FFC708A2A46DE48002C3E67 /* ProductImgModel.swift in Sources */,

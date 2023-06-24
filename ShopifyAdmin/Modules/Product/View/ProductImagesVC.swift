@@ -24,6 +24,8 @@ class ProductImagesVC: UIViewController {
     
     @IBOutlet var deleteImageBtn: UIView!
     
+    @IBOutlet weak var noImage: UIImageView!
+    
     @IBAction func nextImage(_ sender: UIButton) {
         
         if product.images != nil && !(product.images!.isEmpty){
@@ -77,6 +79,7 @@ class ProductImagesVC: UIViewController {
             }
             if product.images!.count > 0{
                 deleteImageBtn.isHidden = false
+                noImage.isHidden = true
             }
             
             pageControl.numberOfPages = product.images!.count
@@ -99,7 +102,13 @@ class ProductImagesVC: UIViewController {
         }
         if product.images!.count == 0{
             deleteImageBtn.isHidden = true
+            noImage.isHidden = false
         }
+        
+        if flagEditAdd == 0{
+            noImage.isHidden = false
+        }
+        
         // Do any additional setup after loading the view.
     }
     
@@ -124,9 +133,14 @@ class ProductImagesVC: UIViewController {
             }
             if product.images!.count == 0{
                 deleteImageBtn.isHidden = true
+                noImage.isHidden = false
+
             }
             
-            currentIndex -= 1
+            if(currentIndex>0){
+                currentIndex -= 1
+            }
+            
             pageControl.numberOfPages = product.images!.count
             self.collectionView.reloadData()
             

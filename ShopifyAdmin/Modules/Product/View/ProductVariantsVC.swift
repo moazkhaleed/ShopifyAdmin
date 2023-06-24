@@ -43,6 +43,8 @@ class ProductVariantsVC: UIViewController {
     
     @IBOutlet var deleteVariantBtn: UIView!
     
+    @IBOutlet weak var noVariantLabel: UILabel!
+    
     @IBAction func nextVariant(_ sender: UIButton) {
         
         if product.variants != nil && !(product.variants!.isEmpty){
@@ -113,8 +115,13 @@ class ProductVariantsVC: UIViewController {
             pageControl.isHidden = true
         }
         
-        if isNew{
+        if product.variants!.count == 0{
+            noVariantLabel.isHidden = false
+        }
+        
+        if flagEditAdd == 0{
             collectionView.isHidden = true
+            noVariantLabel.isHidden = false
         }
         
         productViewModel = ProductViewModel()
@@ -149,16 +156,21 @@ class ProductVariantsVC: UIViewController {
             
             
             product.variants?.remove(at: currentIndex)
+            
             if product.variants!.count < 2{
                 variantNavigationStack.isHidden = true
             }
             if product.variants!.count == 0{
                 deleteVariantBtn.isHidden = true
-            }
-            if product.variants!.count > 0{
-                currentIndex -= 1
+                noVariantLabel.isHidden = false
             }
             
+//            currentIndex -= 1
+            
+            if currentIndex > 0{
+                currentIndex -= 1
+            }
+            prepareVariantFields()
             
             pageControl.numberOfPages = product.variants!.count
             self.collectionView.reloadData()
@@ -177,6 +189,7 @@ class ProductVariantsVC: UIViewController {
     @IBAction func saveVariant(_ sender: Any) {
         if saveVariantData(){
             collectionView.isHidden = false
+            noVariantLabel.isHidden = true
             if(isNew){
                 priceTextField.text = ""
                 quantityTextField.text = ""
