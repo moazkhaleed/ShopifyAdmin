@@ -56,16 +56,16 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="Eg5-ZH-gft">
-                                                <rect key="frame" x="22" y="148" width="353" height="34"/>
+                                                <rect key="frame" x="22" y="148" width="353" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="Ew6-iU-iA9"/>
+                                                    <constraint firstAttribute="height" constant="100" id="Ew6-iU-iA9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0z0-hD-0NZ">
-                                                <rect key="frame" x="20" y="202" width="154" height="31"/>
+                                                <rect key="frame" x="20" y="268" width="154" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="154" id="CZr-FB-a50"/>
                                                     <constraint firstAttribute="height" constant="31" id="IJM-gr-Yub"/>
@@ -75,7 +75,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vendor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cw-Yf-OaR">
-                                                <rect key="frame" x="20" y="251" width="154" height="31"/>
+                                                <rect key="frame" x="20" y="317" width="154" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="154" id="OaW-1o-6hP"/>
                                                     <constraint firstAttribute="height" constant="31" id="jua-Gc-M7b"/>
@@ -85,7 +85,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdn-I2-fGY">
-                                                <rect key="frame" x="182" y="202" width="193" height="35"/>
+                                                <rect key="frame" x="182" y="268" width="193" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="PIi-4H-knG"/>
                                                 </constraints>
@@ -105,7 +105,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvY-7X-L7w">
-                                                <rect key="frame" x="182" y="251" width="193" height="35"/>
+                                                <rect key="frame" x="182" y="317" width="193" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="kjz-3e-uLf"/>
                                                 </constraints>
@@ -125,7 +125,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tj-Gy-00t">
-                                                <rect key="frame" x="22" y="298" width="260" height="31"/>
+                                                <rect key="frame" x="22" y="364" width="260" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="hHo-hY-Lp7"/>
                                                     <constraint firstAttribute="height" constant="31" id="i8o-5x-aWp"/>
@@ -135,7 +135,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLM-rE-nLb">
-                                                <rect key="frame" x="108.66666666666669" y="354" width="180" height="45"/>
+                                                <rect key="frame" x="108.66666666666669" y="420" width="180" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="855-7w-yyU"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="Llg-hD-s2P"/>
@@ -156,7 +156,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAm-ms-YZw">
-                                                <rect key="frame" x="108.66666666666669" y="434" width="180" height="45"/>
+                                                <rect key="frame" x="108.66666666666669" y="500" width="180" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="H0J-v1-KlX"/>
                                                     <constraint firstAttribute="height" constant="45" id="Zfn-Fq-VHC"/>
@@ -256,17 +256,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QRJ-3W-KUP">
-                                <rect key="frame" x="16" y="409" width="361" height="80"/>
+                                <rect key="frame" x="16" y="409" width="361" height="100"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="63t-Sz-9Vd"/>
+                                    <constraint firstAttribute="height" constant="100" id="63t-Sz-9Vd"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="ECX-QP-9jE">
-                                <rect key="frame" x="32" y="531" width="329.33333333333331" height="34.333333333333371"/>
+                                <rect key="frame" x="32" y="551" width="329.33333333333331" height="34.333333333333371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJ3-56-P11">
                                         <rect key="frame" x="0.0" y="0.0" width="148.66666666666666" height="34.333333333333336"/>
@@ -294,7 +294,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utK-Fo-cCb">
-                                <rect key="frame" x="106.33333333333333" y="597.33333333333337" width="180.33333333333337" height="45"/>
+                                <rect key="frame" x="106.33333333333333" y="617.33333333333337" width="180.33333333333337" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="6dU-MS-Tqz"/>
                                     <constraint firstAttribute="height" constant="45" id="F0p-0s-2YI"/>
@@ -1419,7 +1419,7 @@
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="placeholder" width="760" height="480"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="shopify" width="449" height="512"/>
+        <image name="shopify" width="2400" height="2737"/>
         <image name="trash" catalog="system" width="117" height="128"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
